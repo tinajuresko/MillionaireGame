@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+header, main, footer {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px; 
+}
+
+.soundImage {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    width: 30px; 
+    height: auto; 
+}
+
+.audioStatusText{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    color: goldenrod;
+}
+
+.question {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+.answers {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.answers button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.answers button:hover {
+    background-color: #555;
+}
+
+.answer-button.selected {
+    background-color: #0a1080;
+    color: #fff;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #0a1080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.levels {
+    position: fixed;
+    top: 50%; 
+    right: 220px;
+    transform: translateY(-50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.levels ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.levels li {
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+.highlighted{
+    background-color: #555;
+}
+
+.lose-image, .win-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        padding: 40px; 
+    }
+
+    .question {
+        padding: 30px; 
+    }  
+}
+
+@media screen and (max-width: 1200px) {
+    .levels {
+        position: static; 
+        transform: none; 
+        margin-top: 20px; 
+    }
+}
+
+
+

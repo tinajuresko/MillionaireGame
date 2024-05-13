@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Wants to Be a Millionaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Who Wants to Be a Millionaire</h1>
+            <audio id="backgroundMusic" autoplay loop muted>
+                <source src="sound/Theme.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              
+            <img src="images/img.png" alt="Logo" class="logo">
+            <img id="soundImage" src="images/n.webp" alt="Sound" class="soundImage">
+        </header>
+        <main>
+            <div id="question">
+                
+                
+            </div>
+            <button id="submit-answer">Submit Answer</button>
+            <audio id="wrongAudio" src="sound/lose.mp3" preload="auto"></audio>
+            <audio id="correctAudio" src="sound/Correct.mp3" preload="auto"></audio>
+            <audio id="winAudio" src="sound/win.mp3" preload="auto"></audio>
+            <button id="restartButton" style="display: none;">Restart</button>
+            
+        </main>
+        <div class="levels">
+            <ul>
+                <li>$1000000</li>
+                <li>$500000</li>
+                <li>$250000</li>
+                <li>$125000</li>
+                <li>$64000</li>
+                <li>$32000</li>
+                <li>$16000</li>
+                <li>$8000</li>
+                <li>$4000</li>
+                <li>$2000</li>
+                <li>$1000</li>
+                <li>$500</li>
+                <li>$300</li>
+                <li>$200</li>
+                <li>$100</li>
+                
+            </ul>
+        </div>
+        <footer>
+            
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
